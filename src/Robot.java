@@ -1,13 +1,16 @@
 public class Robot
 {
+    String name;
+
     public static void main(String[] args)
     {
-        Robot robot = new Robot();
-        robot.speak();
+        Robot r = new Robot();
+        r.name = "Boi";
+        r.speak("Hello! My name is ");
     }
 
-    void speak()
+    void speak(String msg)
     {
-        System.out.println("Hi!");
+        System.out.println(msg + name);
     }
 }
